@@ -1,0 +1,108 @@
+
+<html lang="pt-br">
+   
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./Style.css">
+
+</head>
+<script>  
+    // Para colcoar display de alerta para variável "NONE", vamos utilizar script abaixo
+   function displayfunc(){
+       document.querySelector('.Alerta').style.display='none'
+       // Vamos salvar estas informações no Local Storage
+   }
+       //Quando a pessoa ativa o onclick libera esta função
+       function Savesto(){  //vamos atribuir os valores da input nas variaveis
+        
+        const savename = document.querySelector("#name").value;
+           
+           
+           const saveemail = document.querySelector("#exampleInputEmail1").value;
+           
+           
+           const savenum = document.querySelector("#numins").value;
+
+           if(savenum.length === 0 || saveemail.length === 0 || savename.length === 0) {
+               throw alert('Preencha todos os campos')
+           }
+           
+           // alert(savename + savenum + saveemail); Comando de teste
+           
+           //vamos salvar no navegador usando LocalStorage.
+           localStorage.setItem('Email', saveemail);
+           localStorage.setItem('Nome', savename);
+           localStorage.setItem('Numero', savenum);
+           window.alert("Obrigado por preencher este formulário, para apagar os dados salvos neste navegador peço que exclua o cache do mesmo.")
+           }
+            
+ 
+       
+
+   
+       
+    </script>
+
+<body> 
+    <div class="Obrigado">
+        <br><br><br><br><br><br><br><h3><center>Obrigado por preencher este formulário, todos os dados foram salvos no seu navegador, caso queira excluir peço que apague cache deste site.</p>
+        </center></h3></div>
+    
+
+    <div class="Alerta"><h1><center>Atenção</center></h1>
+    <p>Este formulário tem como fim, realizar prática do conhecimento através de técnicas baseadas nas Linguagens de<br>
+        <br><strong>HTML</strong>
+        <br><strong>CSS</strong>
+        <br><strong>JavaScript</strong>
+                <br><br> em conjunto com bootstrap para conseguir criar botão 
+                "Enviar", todas informações pegas no site sofreram alterações 
+                para correta aplicação neste documento, é importante ressaltar
+                 que, todos os dados serão armazenados no seu navegador utilizando o LocalStorage como função :) 
+    
+    
+               <br><br><h7>ATT:Diego Henrique </h7>
+                <br><br>
+                <center><button  onclick="displayfunc()">Confirmar</button></center>
+    </div>
+     </p><br><br><br>
+
+
+
+
+     <br><br>  
+     
+     <form> 
+        <div class="Logon-Box">
+        <br><div class="nameins">
+            <label for="name"  class="form-label" autocomplete="off">Nome</label>
+            <input type="text" class="form-control" autocomplete="off" id="name" required >
+        </div>
+        
+        
+        <br><div class="emailins">
+            <label for="exampleInputEmail1" autocomplete="off" class="form-label">Email</label>
+            <input type="email" class="form-control" autocomplete="off" id="exampleInputEmail1" required >
+       
+            <br><div class="numins">
+            <label for="numero" autocomplete="off"  class="form-label">Numero de Telefone</label>
+            <input type="text" autocomplete="off"  class="form-control" id="numins"  required>
+        </input>
+        </div>
+        
+      </div>
+        <br><br><center><button class="btn btn-primary" onclick="Savesto()" 
+             >Enviar</button></div></center>
+            
+         </div>  
+    </div> </center>
+        
+    </form>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script></body>
+<script src="./save.js"></script>
+
+</html>

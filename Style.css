@@ -1,0 +1,68 @@
+
+.numins{
+    width: 300px;
+margin: 0 auto;
+}
+
+.nameins{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.emailins{
+width: 300px;
+margin: 0 auto;
+
+}
+.Alerta {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 450px;
+    box-shadow: 0 1px 5px rgb(0 0 0);
+    width: 80%;
+    border-radius: 5px;
+    padding: 2rem;
+    font-family: Monospace;
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    margin-top: 5%;
+    display: block;
+    
+}
+
+body {
+    
+     background: tomato;
+}
+
+
+p {
+    margin: 5px; 
+}
+.Logon-Box {
+
+    
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgb(156, 155, 153);
+    color: rgb(240, 240, 240);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    
+}
+.Obrigado{
+    background-color: tomato;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    display: none;
+  
+   
+   
+  
+
+}
+
